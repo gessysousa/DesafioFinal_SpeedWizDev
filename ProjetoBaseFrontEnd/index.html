@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="col-12" id="biblioteca">
+    <h1 class="titulo">BIBLIOTECA - SPEED WIZ DEV</h1>
+  </div>
+  <div class="col-12">
+    <div id="errors" class="divPadraoClass"></div>
+  </div>
+
+  <div id="telaLogin">
+    <div class="tituloLogin">
+      <h1>BIBLIOTECA - SPEED WIZ DEV</h1>
+    </div>
+    <form id="formLogin">
+      <label>E-mail: </label>
+      <input name="email" value="" />
+      <label>Senha: </label>
+      <input type="password" name="senha" value="" />
+      <div class="buttonClass"><button type="submit" id="buttonEntrar">Entrar</button></div>
+    </form>
+
+    <div class="identificador">
+      <h5>Speed Wiz Dev - IGTI</h5>
+      <h5>Desenvolvido por Gessy Sousa</h5>
+    </div>
+
+    <div class="icon-footer">
+      <a href="https://www.linkedin.com/in/gessy-helena-schwanz-de-sousa/">
+        <image src="./imagens/linkedin.png" alt="linkedin" width="70px" />
+      </a>
+      <a href="https://github.com/gessysousa">
+        <image src="./imagens/github.png" alt="github" width="60px" />
+      </a>
+    </div>
+  </div>
+
+  <div class="col-8">
+    <div id="listaLivros" class="divPadraoClass">
+          <h2 style="text-align: center;">Coleção de Livros</h2>
+      <div class="formGroup">
+      <ul></ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div id="telaLivros" class="divPadraoClass">
+      <h3>Gerenciador de livros</h3>
+      <div class="inline"></div>
+      <form id="formLivro">
+        <div class="formGroup">
+          <label>Descrição </label>
+          <input name="descricao" />
+        </div>
+
+        <div class="col-6">
+          <div class="formGroup">
+            <label>ISBN</label>
+            <input name="isbn" id="isbn" type="number" />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="formGroup">
+            <label>Ano</label>
+            <input name="anoLancamento" type="number" />
+          </div>
+        </div>
+        <div class="formGroup">
+          <label>Autor</label>
+          <select name="autorId" id="autorId"></select>
+        </div>
+
+        <div class="buttonClass">
+          <button type="button" id="buttonExcluir">Excluir</button>
+          <button type="button" id="buttonCancelar">Cancelar</button>
+          <button type="submit" id="buttonSalvar">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+    <div id="telaAdmin" class="divPadraoClass">
+      <form id="formUsuarios">
+        <h3>Ferramentas do Administrador</h3>
+        <div class="inline"></div>
+        <b>Cadastro de usuário: </b>
+        <div class="formGroup">
+          <label>Role: </label>
+          <select name="role" id="role">
+            <option value="1">Administrador</option>
+            <option value="2">Comum</option>
+          </select>
+        </div>
+        <div class="formGroup">
+          <label>Nome:</label>
+          <input
+            name="nomeUsuario"
+            id="nomeUsuario"
+            placeholder="Digite o nome do usuário"
+            type="text"
+          />
+        </div>
+        <div class="formGroup">
+          <label>Email: </label>
+          <input name="emailUsuario" placeholder="email@email.com" />
+        </div>
+        <div class="formGroup">
+          <label>Senha:</label>
+          <input
+            name="senhaUsuario"
+            placeholder="Digite nova senha"
+            type="password"
+          />
+        </div>
+        <div class="buttonClass">
+          <button type="submit" id="buttonCadastraUsuario">Cadastrar</button>
+        </div>
+      </form>
+      <form id="formAutores">
+        <div class="inline"></div>
+        <b>Cadastro de autor:</b>
+        <div class="formGroup">
+          <label>Nome: <input name="nomeAutor" /></label>
+        </div>
+        <div class="formGroup">
+          <label
+            >Sobrenome: <input name="sobrenomeAutor" id="sobrenomeAutor"
+          /></label>
+        </div>
+        <div class="buttonClass">
+          <button type="submit" id="buttonCadastraAutor">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="http.js"></script>
+  <script src="main.js"></script>
+</body>
